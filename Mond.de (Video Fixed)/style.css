@@ -1,0 +1,443 @@
+
+
+
+/* Style*/
+
+/* --- Generell --- */
+
+body {
+    background-color:rgb(0, 0, 0);
+    font-family: 'Figtree';
+    color: white;
+}
+
+
+/* --- Navbar --- */
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display:flexbox;
+    float: left;
+    background-color: rgba(81, 80, 80, 0.8);	
+    opacity: 90%;
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    z-index: 100000000;
+}
+.nav-logo-2 {
+   position: fixed;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+.nav-logo {
+    position: fixed;
+    margin-top: 16px;
+    margin-left: 5px;
+}
+
+.navbar li {
+    float: right;
+    
+}
+.navbar li a {
+    text-align: right;
+    padding: 18px 16px; 
+    display: block;
+    color: white;
+    font-size: 15px;
+    transition: all .40s ease;    /* smooth */
+    text-decoration: none;
+}
+.navbar li a:hover {
+      transform: translateY(-3px) translateX(-5px);
+      color: rgb(229, 165, 229);
+      text-shadow: 0 0 30px rgb(229, 165, 229);
+}
+
+/* -- Home/Mond.html --- */
+
+.mondanfang {
+    display: flex;
+    padding-top: 5%;
+    justify-content: center;
+    padding-bottom: 2%;
+    z-index: 3;
+    
+}
+
+
+#video-stars {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+.current-moon {
+    display: flex; 
+
+    justify-content: center;
+}
+.current-moon-table {
+    width: 40%;
+    padding-bottom: 50px;
+    background: rgba(255, 255, 255, 0.1) ;
+    border-radius: 20px;
+}
+.current-moon-table td {
+    border-collapse: collapse;
+    margin: 30px;
+    padding: 10px;
+}
+.current-moon-table th {
+    border-collapse: collapse;
+    margin: 30px;
+    padding: 10px;
+}
+.current-moon-table-gray {
+    background-color: rgba(128, 128, 128, 0.5);
+}
+
+.following_days {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+    padding: auto;
+}
+.following_days table {
+   
+    border-radius: 15px;
+    background-color: rgba(128, 128, 128, 0.4);
+    margin: 0px 5px;
+}
+.following_days th {
+    background-color: rgba(128, 128, 128, 0.7);
+    border: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 0 19px gray;
+}
+.following_days td {
+    border: none;
+    padding:  10px;
+    
+}
+.i1 {
+    margin-left: 10px;
+} 
+
+.hr1_ev {
+      width: 400px;
+    margin-bottom: 40px;
+    opacity: 90%;
+    }
+.puntermond {
+    text-align: center;
+    font-size: 25px;
+}	 
+
+.mondzykl {
+    height: 400px;
+    width: 400px;
+    pointer-events: relative;   
+   
+}
+
+.globe.earth {
+    background: aqua;
+    height: 30px;
+    width: 30px;
+    right: 28px;
+    top: 28px;
+    
+
+}
+.globe.moon {
+    width: 12px;
+    height: 12px;
+    background: #d6d6d6;
+    right: 2px;
+    top: 8px;
+}
+.globe {
+    border-radius: 50%;
+    position: absolute;
+}
+.orbit.earth {
+    position: relative;
+    animation: orbit 36.5s linear infinite;
+    height: 300px;
+    left: 50px;
+    top: 50px;
+    width: 300px;
+}
+.orbit.moon {
+    animation: orbit 2.7s linear infinite;
+    height: 80px;
+    left: -25px;
+    top: -25px;
+    width: 80px;
+
+}
+.orbit {
+    position: relative;
+    border: solid;
+    border-color: white transparent transparent transparent;
+    border-radius: 50%;
+    border-width: 1px 1px 0 0;
+    box-sizing: border-box;
+    transform: rotate(0deg);
+    transform-origin: center;
+    
+}
+
+@keyframes orbit {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.mondzykl-text1 {
+   
+   
+    color: rgb(209, 194, 194);
+    padding-right: 100px;
+    padding-bottom: 20px;
+   
+    
+}
+.mondzykl-text2 {
+    color: rgb(209,194,194);
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+main {
+    background: black;
+    position: relative;
+
+}
+
+.mondzykl-bild1 {
+    display: flex;
+    margin-top: 150px;
+}
+
+.mondzykl-gesamt {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    padding-bottom: 200px;
+}
+
+.mondzykl-gesamt div {
+        place-self: center;
+    }
+
+
+
+    /* --- Mond-Fakten --- */
+
+.fakten-body {
+    background: linear-gradient(rgb(100, 79, 119), black);
+}
+.mond-fakten-h1 {
+    padding-top: 40px;
+    text-align: center;
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+}
+.hr-fakten {
+    width: 500px;
+    margin-bottom: 40px;
+}
+.fakten-table td {
+    border:none;
+}
+.fakten-zahl {
+    font-size: 90px;
+    padding-left: 20px;
+    background-image:linear-gradient(90deg,rgb(187, 139, 187),rgb(157, 75, 157));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-top: 8px;
+}
+.fakten-text {
+    padding-left: 20px;
+    color: rgb(207, 207, 207);
+   
+}
+.fakten {
+    border: none;
+    border-radius:20px;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+.fakt2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 5px;
+}
+.placeholder {
+    padding-bottom: 150px;
+}
+
+
+  
+    /* --- News --- */
+
+.mond-news-h1 {
+    padding-top: 40px;
+    text-align: center;
+    text-shadow: 0 0 30px rgb(255, 255, 255);
+}
+.news-table-nw {
+    border: none;
+    border-radius:20px;
+    background: rgba(255, 255, 255, 0.1);
+    opacity: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.news-header-nw {
+    color: rgb(223, 160, 255);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 25px;
+    font-weight: 400;
+} 
+.read-more {
+    color:  rgb(129, 108, 173);
+}
+.hr-news {
+    margin-top: 50px;
+    width: 90%;
+    border: 1px solid rgb(47, 47, 47);
+    border-radius: 5px;
+    margin-bottom: 50px;   
+}
+
+.news-header {
+    text-align: left;
+    color: rgb(232, 196, 232);
+    font-size: 35px;
+    padding-top:25px ;
+    padding-left: 20px;
+    font: 'Figtree';
+    font-weight: 900;
+}
+.news-img {
+    border-radius: 20px;
+    padding-left: 25px;
+}
+    /* --- About --- */
+
+.cre_about {
+    color: rgb(255, 4, 255);
+    font-family: 'Figtree';
+    
+ }
+.textuno_about {
+    text-align: center;
+    padding-top: 20px;
+}
+.textdos_about {
+    text-align: center;
+    color: rgb(225, 225, 225);
+    padding-bottom: 20px;
+}
+.about {
+    background:rgba(255, 255, 255, 0.554);
+    border-radius: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+}
+.about-2 {
+    display: flex;
+    justify-content: center;
+    
+}
+.logo-about {
+    padding-bottom: 400px;
+}
+    /* --- Footer --- */
+
+
+footer {
+    border-top-right-radius:20px;
+    border-top-left-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(00px, auto));
+    gap: 2rem;
+    background: linear-gradient(rgb(59, 59, 59),rgb(58, 48, 58));
+    height: auto;
+    width: 100%;
+    font-family: 'Figtree';
+    list-style-type: none;
+}
+   
+
+
+
+.footer-content li{
+    margin-bottom: 5px;
+    font-weight: 400;
+    color: rgb(202, 197, 197);
+} 
+.icons a {
+    display: inline-block;
+    font-size: 40px;
+    color: white;
+    margin-right: 17px;
+    transition: all .40s ease;
+    
+}
+.icons a:hover{
+    color: rgb(229, 165, 229);
+    transform: translateY(-5px);
+}
+.footer-content p{
+    color: white;
+    font-size: 16px;
+}
+.footer-hr {
+    opacity: 10%;
+    width: 250px;
+   
+}
+#myBtn {
+    border: none; 
+    background-color:rgba(87, 84, 89,0.4 ); 
+    color: white; 
+    cursor: pointer; 
+    padding: 15px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    position: relative;
+    left: 40px;
+  }
+  
+  #myBtn:hover {
+    background-color: rgba(229, 165, 229,0.4); 
+  }
+.footer-brandname {
+    position: relative;  
+    padding-left: 55px ; 
+}
+
+
+
+
